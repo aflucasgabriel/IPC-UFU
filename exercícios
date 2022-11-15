@@ -1,0 +1,27 @@
+// Escreva um algoritmo que leia um vetor de N elementos. 
+Após a digitação do último valor, encontre e mostre o maior elemento. //
+
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main (){
+
+    int lista[5], i;
+    int maior = 0;
+
+    for ( i = 0; i < 5; i++){
+        printf("Digite um numero inteiro: ");
+        scanf("%d", &lista[i]);
+        setbuf(stdin, NULL);
+    }
+
+    for ( i = 0; i < 5; i++){
+        if(maior < lista[i])
+           maior = lista[i];
+    }
+
+    printf("\n\nO maior valor eh: %d", maior);
+    return 0;
+    
