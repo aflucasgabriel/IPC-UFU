@@ -185,3 +185,32 @@ int main()
 
    return 0;
 }
+
+
+// Exercicio basico de fatorial utilizando função //
+
+int fatorial (int n){
+    int i, f = 1;
+
+    for ( i = 1; i <= n; i++)
+    {
+        f = f * i;
+    }
+    
+    return f;
+}
+
+
+int main(){
+
+    int x, y;
+    printf("Digite n: ");
+    scanf("%d", &x);
+
+    y = fatorial(x);
+
+    printf("\nFatorial de %d eh = %d", x, y);
+
+
+    return 0;
+}
