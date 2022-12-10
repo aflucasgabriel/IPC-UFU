@@ -214,3 +214,87 @@ int main(){
 
     return 0;
 }
+
+#include <stdio.h>
+#include <stdlib.h>
+
+ 
+
+int maior(int x, int y){
+
+ 
+
+    if( x > y)
+        return x;
+    else
+        return y;
+
+ 
+
+
+}
+
+
+
+
+
+// Maior e menor entre 2 numeros //
+
+
+
+int main()
+{
+    int a, b, z;
+    printf("Digite 2 numeros: ");
+    scanf("%d %d", &a,  &b);
+
+ 
+
+    z = maior(a, b);
+
+ 
+
+    printf("\nO maior entre %d e %d eh: %d", a, b, z);
+
+ 
+
+    return 0;
+}
+
+
+float volume(float raio, float altura){
+
+ 
+
+    float vol = 3.141592 * raio * raio * altura;
+
+ 
+
+    return vol;
+}
+
+ 
+
+
+// Calculo de volume //
+
+
+int main()
+{
+    //float a, b,;
+    float y = volume(5, 10);
+    //printf("Digite o valor da altura(h) e do raio (r) desejada do cilindro: ");
+    //scanf("%f %f", &a,  &b);
+
+ 
+
+    //z = vol(a, b);
+
+ 
+
+    printf("\nO volume eh: %.2f", y);
+
+ 
+
+    return 0;
+}
