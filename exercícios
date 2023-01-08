@@ -298,3 +298,34 @@ int main()
 
     return 0;
 }
+
+
+// Transferir o conteudo de um arquivo que esta em minusculo para outro arquivo em maiusculo 
+
+int main() {
+
+    FILE *f1, *f2;
+    f1 = fopen("arquivo.txt", "r");
+    f2 = fopen("maiusculo.txt", "w");
+
+    if (f1 == NULL || f2 == NULL){
+        printf("\n\nErro na abertura!!\n\n");
+        return 0;
+    } 
+
+    char c;
+    
+    printf("\n");
+    c = fgetc(f1);
+    
+    while(c != EOF){
+        
+        fputc(toupper(c), f2);
+        c = fgetc(f1);
+
+    }
+    printf("\n");
+    fclose(f1);
+    fclose(f2);
+    
+
